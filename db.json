@@ -1,0 +1,1324 @@
+{
+    "id": 128,
+    "name": "1500 Calorie Meal Plan",
+    "days": [
+        {
+            "nutritionSummary": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 1293,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 65
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 65,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 100
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 102,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 34
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 83,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 166
+                    }
+                ]
+            },
+            "nutritionSummaryBreakfast": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 132,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 7
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 3,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 4
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 25,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 8
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 3,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 5
+                    }
+                ]
+            },
+            "nutritionSummaryLunch": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 455,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 23
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 34,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 52
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 1,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 0
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 35,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 70
+                    }
+                ]
+            },
+            "nutritionSummaryDinner": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 706,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 35
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 29,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 45
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 76,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 25
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 46,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 91
+                    }
+                ]
+            },
+            "day": "1",
+            "items": [
+                {
+                    "id": 2403,
+                    "slot": 1,
+                    "position": 0,
+                    "type": "RECIPE",
+                    "value": {
+                        "id": 630657,
+                        "title": "Double Chocolate Protein Cookies",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2404,
+                    "slot": 1,
+                    "position": 0,
+                    "type": "INGREDIENTS",
+                    "value": {
+                        "name": "",
+                        "servings": "1",
+                        "ingredients": [
+                            {
+                                "name": "orange",
+                                "image": "https://spoonacular.com/cdn/ingredients_100x100/orange.jpg",
+                                "amount": 1,
+                                "unit": ""
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 2405,
+                    "slot": 2,
+                    "position": 0,
+                    "type": "RECIPE",
+                    "value": {
+                        "id": 296213,
+                        "title": "Spinach Salad with Roasted Vegetables and Spiced Chickpea",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2406,
+                    "slot": 3,
+                    "position": 0,
+                    "type": "RECIPE",
+                    "value": {
+                        "id": 237677,
+                        "title": "Chicken Parmesan with Spaghetti",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2407,
+                    "slot": 3,
+                    "position": 0,
+                    "type": "INGREDIENTS",
+                    "value": {
+                        "name": "",
+                        "servings": "1",
+                        "ingredients": [
+                            {
+                                "name": "broccoli",
+                                "image": "https://spoonacular.com/cdn/ingredients_100x100/broccoli.jpg",
+                                "amount": 1,
+                                "unit": "cup"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 2408,
+                    "slot": 3,
+                    "position": 0,
+                    "type": "PRODUCT",
+                    "value": {
+                        "id": 146191,
+                        "title": "Lindt Dark Chocolate",
+                        "imageType": "jpg"
+                    }
+                }
+            ]
+        },
+        {
+            "nutritionSummary": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 1386,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 69
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 66,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 102
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 162,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 54
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 48,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 96
+                    }
+                ]
+            },
+            "nutritionSummaryBreakfast": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 239,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 12
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 11,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 17
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 34,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 11
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 5,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 9
+                    }
+                ]
+            },
+            "nutritionSummaryLunch": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 732,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 37
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 33,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 51
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 91,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 30
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 22,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 44
+                    }
+                ]
+            },
+            "nutritionSummaryDinner": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 414,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 21
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 22,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 33
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 37,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 12
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 21,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 43
+                    }
+                ]
+            },
+            "day": "2",
+            "items": [
+                {
+                    "id": 2409,
+                    "slot": 1,
+                    "position": 0,
+                    "type": "PRODUCT",
+                    "value": {
+                        "id": 101999,
+                        "title": "Greek Gods Yogurt",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2410,
+                    "slot": 1,
+                    "position": 0,
+                    "type": "INGREDIENTS",
+                    "value": {
+                        "name": "",
+                        "servings": "1",
+                        "ingredients": [
+                            {
+                                "name": "berries",
+                                "image": "https://spoonacular.com/cdn/ingredients_100x100/berries-mixed.jpg",
+                                "amount": 1,
+                                "unit": "cup"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 2411,
+                    "slot": 2,
+                    "position": 0,
+                    "type": "RECIPE",
+                    "value": {
+                        "id": 516377,
+                        "title": "Southwest Quinoa Salad",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2412,
+                    "slot": 3,
+                    "position": 0,
+                    "type": "RECIPE",
+                    "value": {
+                        "id": 247683,
+                        "title": "Pesto Caprese Omelette",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2413,
+                    "slot": 3,
+                    "position": 0,
+                    "type": "RECIPE",
+                    "value": {
+                        "id": 484337,
+                        "title": "One Ingredient Banana Ice Cream",
+                        "imageType": "jpg"
+                    }
+                }
+            ]
+        },
+        {
+            "nutritionSummary": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 1589,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 79
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 77,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 118
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 158,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 53
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 84,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 168
+                    }
+                ]
+            },
+            "nutritionSummaryBreakfast": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 472,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 24
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 14,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 21
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 62,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 21
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 27,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 54
+                    }
+                ]
+            },
+            "nutritionSummaryLunch": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 568,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 28
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 45,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 69
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 31,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 10
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 18,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 36
+                    }
+                ]
+            },
+            "nutritionSummaryDinner": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 549,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 27
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 18,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 27
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 65,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 22
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 39,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 78
+                    }
+                ]
+            },
+            "day": "3",
+            "items": [
+                {
+                    "id": 2414,
+                    "slot": 1,
+                    "position": 0,
+                    "type": "RECIPE",
+                    "value": {
+                        "id": 157259,
+                        "title": "Cocoa Protein Pancakes",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2415,
+                    "slot": 1,
+                    "position": 0,
+                    "type": "INGREDIENTS",
+                    "value": {
+                        "name": "",
+                        "servings": "1",
+                        "ingredients": [
+                            {
+                                "name": "orange",
+                                "image": "https://spoonacular.com/cdn/ingredients_100x100/orange.jpg",
+                                "amount": 1,
+                                "unit": ""
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 2416,
+                    "slot": 2,
+                    "position": 0,
+                    "type": "RECIPE",
+                    "value": {
+                        "id": 535856,
+                        "title": "BLT Chopped Salad",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2417,
+                    "slot": 2,
+                    "position": 0,
+                    "type": "PRODUCT",
+                    "value": {
+                        "id": 71144,
+                        "title": "Kind Plus Fruit & Nut Bar - Almond Walnut Macadamia with Peanuts Plus Protein",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2418,
+                    "slot": 3,
+                    "position": 0,
+                    "type": "RECIPE",
+                    "value": {
+                        "id": 519197,
+                        "title": "Zesty Sriracha Shrimp and Quinoa",
+                        "imageType": "png"
+                    }
+                },
+                {
+                    "id": 2419,
+                    "slot": 3,
+                    "position": 0,
+                    "type": "PRODUCT",
+                    "value": {
+                        "id": 163427,
+                        "title": "Green Giant Valley Fresh Steamers - Select Sugar Snap Peas",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2420,
+                    "slot": 3,
+                    "position": 0,
+                    "type": "PRODUCT",
+                    "value": {
+                        "id": 146191,
+                        "title": "Lindt Dark Chocolate",
+                        "imageType": "jpg"
+                    }
+                }
+            ]
+        },
+        {
+            "nutritionSummary": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 1343,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 67
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 70,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 108
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 123,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 41
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 61,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 122
+                    }
+                ]
+            },
+            "nutritionSummaryBreakfast": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 239,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 12
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 11,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 17
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 34,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 11
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 5,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 9
+                    }
+                ]
+            },
+            "nutritionSummaryLunch": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 406,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 20
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 17,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 26
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 56,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 19
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 10,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 21
+                    }
+                ]
+            },
+            "nutritionSummaryDinner": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 698,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 35
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 43,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 66
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 34,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 11
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 46,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 92
+                    }
+                ]
+            },
+            "day": "4",
+            "items": [
+                {
+                    "id": 2421,
+                    "slot": 1,
+                    "position": 0,
+                    "type": "PRODUCT",
+                    "value": {
+                        "id": 101999,
+                        "title": "Greek Gods Yogurt",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2422,
+                    "slot": 1,
+                    "position": 0,
+                    "type": "INGREDIENTS",
+                    "value": {
+                        "name": "",
+                        "servings": "1",
+                        "ingredients": [
+                            {
+                                "name": "berries",
+                                "image": "https://spoonacular.com/cdn/ingredients_100x100/berries-mixed.jpg",
+                                "amount": 1,
+                                "unit": "cup"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 2423,
+                    "slot": 2,
+                    "position": 0,
+                    "type": "RECIPE",
+                    "value": {
+                        "id": 535563,
+                        "title": "Black Bean Quinoa Salad",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2424,
+                    "slot": 3,
+                    "position": 0,
+                    "type": "RECIPE",
+                    "value": {
+                        "id": 622598,
+                        "title": "Pittata - Pizza Frittata",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2425,
+                    "slot": 3,
+                    "position": 0,
+                    "type": "RECIPE",
+                    "value": {
+                        "id": 484337,
+                        "title": "One Ingredient Banana Ice Cream",
+                        "imageType": "jpg"
+                    }
+                }
+            ]
+        },
+        {
+            "nutritionSummary": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 1247,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 62
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 61,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 95
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 103,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 34
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 78,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 156
+                    }
+                ]
+            },
+            "nutritionSummaryBreakfast": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 295,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 15
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 12,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 19
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 42,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 14
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 11,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 23
+                    }
+                ]
+            },
+            "nutritionSummaryLunch": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 455,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 23
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 34,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 52
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 1,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 0
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 35,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 70
+                    }
+                ]
+            },
+            "nutritionSummaryDinner": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 497,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 25
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 15,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 24
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 60,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 20
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 32,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 63
+                    }
+                ]
+            },
+            "day": "5",
+            "items": [
+                {
+                    "id": 2426,
+                    "slot": 1,
+                    "position": 0,
+                    "type": "PRODUCT",
+                    "value": {
+                        "id": 71144,
+                        "title": "Kind Plus Fruit & Nut Bar - Almond Walnut Macadamia with Peanuts Plus Protein",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2427,
+                    "slot": 1,
+                    "position": 0,
+                    "type": "INGREDIENTS",
+                    "value": {
+                        "name": "",
+                        "servings": "1",
+                        "ingredients": [
+                            {
+                                "name": "banana",
+                                "image": "https://spoonacular.com/cdn/ingredients_100x100/bananas.jpg",
+                                "amount": 1,
+                                "unit": ""
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 2428,
+                    "slot": 2,
+                    "position": 0,
+                    "type": "RECIPE",
+                    "value": {
+                        "id": 296213,
+                        "title": "Spinach Salad with Roasted Vegetables and Spiced Chickpea",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2429,
+                    "slot": 3,
+                    "position": 0,
+                    "type": "RECIPE",
+                    "value": {
+                        "id": 497301,
+                        "title": "Shrimp Scampi",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2430,
+                    "slot": 3,
+                    "position": 0,
+                    "type": "RECIPE",
+                    "value": {
+                        "id": 581021,
+                        "title": "Black Bean Brownies: Fudgy Fun",
+                        "imageType": "jpg"
+                    }
+                }
+            ]
+        },
+        {
+            "nutritionSummary": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 1683,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 84
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 68,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 105
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 139,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 46
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 106,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 212
+                    }
+                ]
+            },
+            "nutritionSummaryBreakfast": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 490,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 24
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 15,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 23
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 65,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 22
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 26,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 53
+                    }
+                ]
+            },
+            "nutritionSummaryLunch": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 378,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 19
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 33,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 51
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 16,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 5
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 8,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 16
+                    }
+                ]
+            },
+            "nutritionSummaryDinner": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 816,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 41
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 21,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 32
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 58,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 19
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 72,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 144
+                    }
+                ]
+            },
+            "day": "6",
+            "items": [
+                {
+                    "id": 2431,
+                    "slot": 1,
+                    "position": 0,
+                    "type": "RECIPE",
+                    "value": {
+                        "id": 157259,
+                        "title": "Cocoa Protein Pancakes",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2432,
+                    "slot": 1,
+                    "position": 0,
+                    "type": "INGREDIENTS",
+                    "value": {
+                        "name": "",
+                        "servings": "1",
+                        "ingredients": [
+                            {
+                                "name": "berries",
+                                "image": "https://spoonacular.com/cdn/ingredients_100x100/berries-mixed.jpg",
+                                "amount": 1,
+                                "unit": "cup"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 2433,
+                    "slot": 2,
+                    "position": 0,
+                    "type": "RECIPE",
+                    "value": {
+                        "id": 535856,
+                        "title": "BLT Chopped Salad",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2434,
+                    "slot": 3,
+                    "position": 0,
+                    "type": "RECIPE",
+                    "value": {
+                        "id": 149425,
+                        "title": "Herb and Cheddar Cordon Bleu",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2435,
+                    "slot": 3,
+                    "position": 0,
+                    "type": "INGREDIENTS",
+                    "value": {
+                        "name": "",
+                        "servings": "1",
+                        "ingredients": [
+                            {
+                                "name": "brussels sprouts",
+                                "image": "https://spoonacular.com/cdn/ingredients_100x100/brussels-sprouts.jpg",
+                                "amount": 1,
+                                "unit": "cup"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 2436,
+                    "slot": 3,
+                    "position": 0,
+                    "type": "INGREDIENTS",
+                    "value": {
+                        "name": "",
+                        "servings": "1",
+                        "ingredients": [
+                            {
+                                "name": "wine",
+                                "image": "https://spoonacular.com/cdn/ingredients_100x100/white-wine.jpg",
+                                "amount": 5,
+                                "unit": "ounces"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "nutritionSummary": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 1442,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 72
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 69,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 106
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 147,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 49
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 73,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 147
+                    }
+                ]
+            },
+            "nutritionSummaryBreakfast": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 444,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 22
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 12,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 19
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 51,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 17
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 38,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 76
+                    }
+                ]
+            },
+            "nutritionSummaryLunch": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 406,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 20
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 17,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 26
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 56,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 19
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 10,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 21
+                    }
+                ]
+            },
+            "nutritionSummaryDinner": {
+                "nutrients": [
+                    {
+                        "name": "Calories",
+                        "amount": 593,
+                        "unit": "cal",
+                        "percentOfDailyNeeds": 30
+                    },
+                    {
+                        "name": "Fat",
+                        "amount": 40,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 62
+                    },
+                    {
+                        "name": "Carbohydrates",
+                        "amount": 41,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 14
+                    },
+                    {
+                        "name": "Protein",
+                        "amount": 25,
+                        "unit": "g",
+                        "percentOfDailyNeeds": 50
+                    }
+                ]
+            },
+            "day": "7",
+            "items": [
+                {
+                    "id": 2437,
+                    "slot": 1,
+                    "position": 0,
+                    "type": "RECIPE",
+                    "value": {
+                        "id": 619085,
+                        "title": "Protein Packed Healthy French Toast with Chocolate and Peanut Butter {Super Simple, Whole Wheat}",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2438,
+                    "slot": 1,
+                    "position": 0,
+                    "type": "INGREDIENTS",
+                    "value": {
+                        "name": "",
+                        "servings": "1",
+                        "ingredients": [
+                            {
+                                "name": "orange",
+                                "image": "https://spoonacular.com/cdn/ingredients_100x100/orange.jpg",
+                                "amount": 1,
+                                "unit": ""
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 2439,
+                    "slot": 2,
+                    "position": 0,
+                    "type": "RECIPE",
+                    "value": {
+                        "id": 535563,
+                        "title": "Black Bean Quinoa Salad",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2440,
+                    "slot": 3,
+                    "position": 0,
+                    "type": "RECIPE",
+                    "value": {
+                        "id": 590570,
+                        "title": "Asian Beef Lettuce Wraps",
+                        "imageType": "jpg"
+                    }
+                },
+                {
+                    "id": 2441,
+                    "slot": 3,
+                    "position": 0,
+                    "type": "PRODUCT",
+                    "value": {
+                        "id": 146191,
+                        "title": "Lindt Dark Chocolate",
+                        "imageType": "jpg"
+                    }
+                }
+            ]
+        }
+    ]
+}
