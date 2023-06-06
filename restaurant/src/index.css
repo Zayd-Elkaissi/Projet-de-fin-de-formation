@@ -9,6 +9,7 @@ body {
   color: #fff;
 }
 
+
 a {
   color: #cda45e;
   text-decoration: none;
@@ -1715,6 +1716,7 @@ section {
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
   background: #d3af71;
 }
+
 
 #footer .copyright {
   text-align: center;
