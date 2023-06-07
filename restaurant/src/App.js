@@ -55,13 +55,13 @@ function App() {
           <div className="d-flex col-4">
             <div class="input-group ">
               <input id="dark" type="number"
-                class="form-control book-a-table-btn d-none d-lg-flex"
+                class="form-control d-none d-lg-flex"
                 placeholder="Calories (2000)"
                 //  value="Calories (2000)"
                 onChange={handleChange}
                 aria-label="Recipient's Search" aria-describedby="Search" />
 
-              <button onClick={getMealData} class="btn btn-blak book-a-table-btn d-flex col-6" type="button" id="Search">Get Daily Meal Plan</button>
+              <button onClick={getMealData} class="btn btn-warning col-6" type="button" id="Search">Get Daily Meal Plan</button>
             </div>
           </div>
 
@@ -174,26 +174,6 @@ function App() {
                 </div>
                 <div className="menu-ingredients">
                   Lorem, deren, trataro, filede, nerada
-                </div>
-              </div>
-
-              <div className="col-lg-6 menu-item filter-salads">
-                <img src="assets/img/menu/greek-salad.jpg" className="menu-img" alt="" />
-                <div className="menu-content">
-                  <a href="#">Greek Salad</a><span>$9.95</span>
-                </div>
-                <div className="menu-ingredients">
-                  Fresh spinach, crisp romaine, tomatoes, and Greek olives
-                </div>
-              </div>
-
-              <div className="col-lg-6 menu-item filter-salads">
-                <img src="assets/img/menu/spinach-salad.jpg" className="menu-img" alt="" />
-                <div className="menu-content">
-                  <a href="#">Spinach Salad</a><span>$9.95</span>
-                </div>
-                <div className="menu-ingredients">
-                  Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
                 </div>
               </div>
 

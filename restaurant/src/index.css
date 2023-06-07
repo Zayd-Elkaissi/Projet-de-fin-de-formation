@@ -1729,3 +1729,16 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+.btn-warning{
+  /* color: #18d26e; */
+  border-color: #d3af71;
+  background-color: #d3af71;
+  width: 170px;
+}
+
+.btn-warning:hover{
+  color: #FFF;
+  border-color: #e3b461;
+  background-color: #e3b461;
+}
