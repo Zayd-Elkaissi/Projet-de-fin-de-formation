@@ -95,8 +95,10 @@ function App() {
 
       <main id="main">
 
+      {mealData && <MealList mealData={mealData} />}
+
         {/* <!-- ======= Menu Section ======= --> */}
-        <section id="menu" className="menu section-bg">
+        {/* <section id="menu" className="menu section-bg">
           <div className="container" data-aos="fade-up">
 
             <div className="section-title">
@@ -180,7 +182,7 @@ function App() {
             </div>
 
           </div>
-        </section>
+        </section> */}
         {/* <!-- End Menu Section -->  */}
 
         {/* <!-- ======= Specials Section ======= --> */}
