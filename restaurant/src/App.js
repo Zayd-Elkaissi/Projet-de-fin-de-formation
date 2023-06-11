@@ -63,7 +63,7 @@ function App() {
             <i className="bi bi-list mobile-nav-toggle"></i>
           </nav>
           {/* <!-- .navbar --> */}
-          <div className="d-flex col-4">
+          {/* <div className="d-flex col-4">
             <div class="input-group ">
               <input id="dark" type="number"
                 class="form-control d-none d-lg-flex"
@@ -74,7 +74,7 @@ function App() {
 
               <button onClick={getMealData} class="btn btn-warning col-6" type="button" id="Search">Get Daily Meal Plan</button>
             </div>
-          </div>
+          </div> */}
 
           {/* <input type="search" placeholder="search" className="book-a-table-btn scrollto d-none d-lg-flex"/> */}
 
@@ -92,7 +92,10 @@ function App() {
 
               <div className="btns">
                 <a href="#menu" className="btn-menu animated fadeInUp scrollto">Our Menu</a>
-                <a href="#book-a-table" className="btn-book animated fadeInUp scrollto">Book a Table</a>
+                <div class="input-group my-5">
+  <input type="number" onChange={handleChange} class="form-control" placeholder="Calories (2000)"/>
+  <button onClick={getMealData} class="btn btn-warning col-6" type="button">Get Daily Meal Plan</button>
+</div>
               </div>
             </div>
              <div className="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
