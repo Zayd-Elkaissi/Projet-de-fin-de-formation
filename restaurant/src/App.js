@@ -20,7 +20,8 @@ function App() {
   }
 
   function  getRes() {
-    axios.get("https://api.spoonacular.com/recipes/715538/similar?apiKey=88cbb41354b04d13858d7f377e338113")
+    // axios.get("https://api.spoonacular.com/recipes/715538/similar?apiKey=88cbb41354b04d13858d7f377e338113")
+    fetch(`https://api.spoonacular.com/recipes/random?apiKey=f4655fef843648ce99be508674c4a22b&tags=vegetarian&number=10`)
 
     .then((response) => response.json())
       .then((data) => {
@@ -296,6 +297,19 @@ function App() {
 
           </div>
         </section>
+
+        {veggies.map(({ title, id, image }) => (
+          <SplideSlide key={id}>
+            <Card>
+              <Link to={`/recipe/${id}`}>
+                <p>{title}</p>
+                <img src={image} alt={title} />
+                <Gradient />
+              </Link>
+            </Card>
+          </SplideSlide>
+        ))}
+        
         {/* <!-- End Specials Section -->  */}
 
 
