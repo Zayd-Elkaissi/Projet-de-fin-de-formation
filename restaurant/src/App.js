@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import MealList from "./component/MealList";
+// import styled from "styled-components";
 import axios from "axios";
 
 function App() {
   const [mealData, setMealData] = useState(null);
   const [calories, setCalories] = useState('');
+  const [veggies, setVeggies] = useState([]);
 
   function getMealData() {
     fetch(
@@ -19,16 +21,40 @@ function App() {
       });
   }
 
-  function  getRes() {
-    // axios.get("https://api.spoonacular.com/recipes/715538/similar?apiKey=88cbb41354b04d13858d7f377e338113")
-    fetch(`https://api.spoonacular.com/recipes/random?apiKey=f4655fef843648ce99be508674c4a22b&tags=vegetarian&number=10`)
+  const getVeggies = async () => {
+    const getData = localStorage.getItem("veggies");
 
-    .then((response) => response.json())
-      .then((data) => {
-        setMealData(data);
-      })
+    if (getData && getData !== "undefined") {
+      setVeggies(JSON.parse(getData));
+    } else {
+      const resp = await fetch(
+        `https://api.spoonacular.com/recipes/random?apiKey=f4655fef843648ce99be508674c4a22b&tags=vegetarian&number=5`
+      );
+      const data = await resp.json();
+      setVeggies(data.recipes);
+      localStorage.setItem("veggies", JSON.stringify(data.recipes));
+      console.log(data.recipes);
+    }
+  };
+
+  useEffect(() => {
+    getVeggies();
+  }, []);
+
+  // function  getRes() {
+    
+    // axios.get("https://api.spoonacular.com/recipes/715538/similar?apiKey=88cbb41354b04d13858d7f377e338113")
+    // fetch(`https://api.spoonacular.com/recipes/random?apiKey=f4655fef843648ce99be508674c4a22b&tags=vegetarian&number=10`)
+
+    // .then((response) => response.json())
+      // .then((data) => {
+        // setVeggies(data);
+      // })
      
-  }
+  // }
+  // useEffect(() => {
+    // getVeggies();
+  // }, []);
 
   function handleChange(e) {
     setCalories(e.target.value);
@@ -110,6 +136,16 @@ function App() {
 
       <main id="main">
 
+      {veggies.map(({ title, id, image }) => (
+          <div key={id}>
+            <Card>
+              <a htef={`/recipe/${id}`}>
+                <p>{title}</p>
+                <img src={image} alt={title} />
+              </a>
+              </Card>
+          </div>
+        ))}
       {mealData && <MealList mealData={mealData} />}
 
         {/* <!-- ======= Menu Section ======= --> */}
@@ -297,18 +333,6 @@ function App() {
 
           </div>
         </section>
-
-        {veggies.map(({ title, id, image }) => (
-          <SplideSlide key={id}>
-            <Card>
-              <Link to={`/recipe/${id}`}>
-                <p>{title}</p>
-                <img src={image} alt={title} />
-                <Gradient />
-              </Link>
-            </Card>
-          </SplideSlide>
-        ))}
         
         {/* <!-- End Specials Section -->  */}
 
@@ -376,6 +400,38 @@ function App() {
   );
 
 }
+// https://chat.openai.com/share/1a6678f1-671b-4ec5-a933-ebd9a7cd83a1
+const Card = styled.div`
+  min-height: 25rem;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+  }
+
+  p {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    height: 40%;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+`;
 
 
 
