@@ -7,6 +7,7 @@ function App() {
   const [mealData, setMealData] = useState(null);
   const [calories, setCalories] = useState('');
   const [veggies, setVeggies] = useState([]);
+  const [menu, setMenu] = useState([]);
 
   function getMealData() {
     fetch(
@@ -24,37 +25,29 @@ function App() {
   const getVeggies = async () => {
     const getData = localStorage.getItem("veggies");
 
-    if (getData && getData !== "undefined") {
-      setVeggies(JSON.parse(getData));
-    } else {
+    // if (getData && getData !== "undefined") {
+    //   setVeggies(JSON.parse(getData));
+    // } else {
       const resp = await fetch(
-        `https://api.spoonacular.com/recipes/random?apiKey=f4655fef843648ce99be508674c4a22b&tags=vegetarian&number=5`
+        `https://api.spoonacular.com/recipes/random?apiKey=ec176c60db384bfdb8eb7a2b149f063b&tags=vegetarian&number=10`
       );
-      const data = await resp.json();
+      let data = await resp.json();
+      let recipes = data.recipes.map((element) => {
+        const dataFilter = btoa(element.dishTypes[0]).toString().replaceAll('=', '');
+        element.dataFilter = dataFilter
+
+        return element
+      })
+      console.log(recipes)
       setVeggies(data.recipes);
-      localStorage.setItem("veggies", JSON.stringify(data.recipes));
-      console.log(data.recipes);
-    }
+      // localStorage.setItem("veggies", JSON.stringify(data.recipes));
+     // console.log(data.recipes);
+    // }
   };
 
   useEffect(() => {
     getVeggies();
   }, []);
-
-  // function  getRes() {
-    
-    // axios.get("https://api.spoonacular.com/recipes/715538/similar?apiKey=88cbb41354b04d13858d7f377e338113")
-    // fetch(`https://api.spoonacular.com/recipes/random?apiKey=f4655fef843648ce99be508674c4a22b&tags=vegetarian&number=10`)
-
-    // .then((response) => response.json())
-      // .then((data) => {
-        // setVeggies(data);
-      // })
-     
-  // }
-  // useEffect(() => {
-    // getVeggies();
-  // }, []);
 
   function handleChange(e) {
     setCalories(e.target.value);
@@ -89,22 +82,6 @@ function App() {
             </ul>
             <i className="bi bi-list mobile-nav-toggle"></i>
           </nav>
-          {/* <!-- .navbar --> */}
-          {/* <div className="d-flex col-4">
-            <div class="input-group ">
-              <input id="dark" type="number"
-                class="form-control d-none d-lg-flex"
-                placeholder="Calories (2000)"
-                //  value="Calories (2000)"
-                onChange={handleChange}
-                aria-label="Recipient's Search" aria-describedby="Search" />
-
-              <button onClick={getMealData} class="btn btn-warning col-6" type="button" id="Search">Get Daily Meal Plan</button>
-            </div>
-          </div> */}
-
-          {/* <input type="search" placeholder="search" className="book-a-table-btn scrollto d-none d-lg-flex"/> */}
-
         </div>
       </header>
       {/* // <!-- End Header -->  */}
@@ -118,16 +95,16 @@ function App() {
               <h2>Delivering great food for more than 18 years!</h2>
 
               <div className="btns">
+                <div class="input-group my-4">
+                  <input type="number" onChange={handleChange} class="form-control" placeholder="Calories (2000)" />
+                  <button onClick={getMealData} class="btn btn-warning col-6" type="button">Get Daily Meal Plan</button>
+                </div>
                 <a href="#menu" className="btn-menu animated fadeInUp scrollto">Our Menu</a>
-                <div class="input-group my-5">
-  <input type="number" onChange={handleChange} class="form-control" placeholder="Calories (2000)"/>
-  <button onClick={getMealData} class="btn btn-warning col-6" type="button">Get Daily Meal Plan</button>
-</div>
               </div>
             </div>
-             <div className="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
-          <a href="" className="glightbox play-btn"></a>
-        </div> 
+            <div className="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
+              <a href="" className="glightbox play-btn"></a>
+            </div>
 
           </div>
         </div>
@@ -135,18 +112,41 @@ function App() {
       {/* // <!-- End Hero -->  */}
 
       <main id="main">
+        <section id="menu" className="menu section-bg">
+          <div className="container" data-aos="fade-up">
 
-      {veggies.map(({ title, id, image }) => (
-          <div key={id}>
-            <Card>
-              <a htef={`/recipe/${id}`}>
-                <p>{title}</p>
-                <img src={image} alt={title} />
-              </a>
-              </Card>
+            <div className="section-title">
+              <h2>Menu</h2>
+              <p>Check Our Tasty Menu</p>
+            </div>
+
+            <div className="row" data-aos="fade-up" data-aos-delay="100">
+              <div className="col-lg-12 d-flex justify-content-center">
+                <ul id="menu-flters">
+                  <li data-filter="*" className="filter-active">All</li>
+              {veggies.map(({ id, dishTypes, dataFilter}) => (
+                
+                  <li key={id} data-filter={"." + dataFilter}>{dishTypes[0]}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div className="row d-flex  menu-container" data-aos="fade-up" data-aos-delay="200">
+              {veggies.map(({ title, id, image, sourceUrl, readyInMinutes, dataFilter}) => (
+                <div key={id} className={"col-lg-6 menu-item " + dataFilter}>
+                  <img src={image} className="menu-img" alt={image} />
+                  <div className="menu-content">
+                    <a target="blank" href={sourceUrl}>{title}</a><span className=""><i id="right" className="bx bx-chevron-right"></i></span>
+                  </div>
+                  <div className="menu-ingredients">
+                    Preparation time : {readyInMinutes} minutes
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-        ))}
-      {mealData && <MealList mealData={mealData} />}
+        </section>
+        {mealData && <MealList mealData={mealData} />}
 
         {/* <!-- ======= Menu Section ======= --> */}
         {/* <section id="menu" className="menu section-bg">
@@ -333,7 +333,7 @@ function App() {
 
           </div>
         </section>
-        
+
         {/* <!-- End Specials Section -->  */}
 
 
@@ -401,37 +401,37 @@ function App() {
 
 }
 // https://chat.openai.com/share/1a6678f1-671b-4ec5-a933-ebd9a7cd83a1
-const Card = styled.div`
-  min-height: 25rem;
-  overflow: hidden;
-  position: relative;
+// const Card = styled.div`
+//   min-height: 25rem;
+//   overflow: hidden;
+//   position: relative;
 
-  img {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 2rem;
-  }
+//   img {
+//     position: absolute;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     border-radius: 2rem;
+//   }
 
-  p {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, 0);
-    text-align: center;
-    color: #fff;
-    width: 100%;
-    height: 40%;
-    font-weight: 600;
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-  }
-`;
+//   p {
+//     position: absolute;
+//     left: 50%;
+//     bottom: 0;
+//     transform: translate(-50%, 0);
+//     text-align: center;
+//     color: #fff;
+//     width: 100%;
+//     height: 40%;
+//     font-weight: 600;
+//     font-size: 1rem;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     z-index: 10;
+//   }
+// `;
 
 
 

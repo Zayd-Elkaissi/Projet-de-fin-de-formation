@@ -23,16 +23,6 @@ export default function MealList({ mealData }) {
               </div>
         </div>
 
-            
-      {/* <section className="nutrients"> */}
-        {/* <h1>Macros</h1>
-        <ul>
-        <li>Calories: {nutrients.calories.toFixed(0)}</li>
-        <li>Carbohydrates: {nutrients.carbohydrates.toFixed(0)}</li>
-        <li>Fat: {nutrients.fat.toFixed(0)}</li>
-        <li>Protein: {nutrients.protein.toFixed(0)}</li>
-      </ul> */}
-      {/* </section> */}
 
       <div className="row d-flex  menu-container" data-aos="fade-up" data-aos-delay="200">
         {mealData.meals.map((meal) => {
