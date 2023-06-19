@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthContorller;
 use App\Http\Controllers\FavoriteController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -20,3 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::resource('favorite', FavoriteController::class);
+Route::post('/login', [AuthContorller::class,'login']);
+Route::post('/register',[AuthContorller::class,'register']);
+Route::post('logout',[AuthController::class,'logout']);
