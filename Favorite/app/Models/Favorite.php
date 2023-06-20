@@ -15,7 +15,7 @@ class Favorite extends Model
         "name",
         "image",
         "timePreparation",
-        "Number"
+        // "Number"
     ];
 
     public $timestamps= false;

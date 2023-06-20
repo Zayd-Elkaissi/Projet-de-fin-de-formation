@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('image');
             $table->integer('timePreparation');
-            $table->integer('Number');
+            $table->integer('Number')->nullable();
             $table->timestamps();
         });
     }

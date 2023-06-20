@@ -465,11 +465,20 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../public/assets/img/gym1.jpg") top center;
+  background: url("../public/assets/img/food3.jpg") top center;
   background-size: cover;
   position: relative;
   padding: 0;
 }
+
+/* .hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../public/assets/img/food6.png") top center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+} */
 
 #hero:before {
   content: "";
@@ -1846,5 +1855,7 @@ section {
 	font-size: 14px;
 	color: #ffc000;
 }
+
+
 
 

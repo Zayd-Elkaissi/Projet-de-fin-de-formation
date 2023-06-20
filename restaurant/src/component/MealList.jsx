@@ -24,9 +24,7 @@ export default function MealList({ mealData }) {
         </div>
 
 
-      {/* <div className="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center  menu-container" data-aos="fade-up" data-aos-delay="200"> */}
-      {/* <div class="container-md"> */}
-		{/* <div class="col-md-12"> */}
+     
 			<div id="" class="carousel slide" >
 				<div class="item row">
         {mealData.meals.map((meal) => {
@@ -35,8 +33,6 @@ export default function MealList({ mealData }) {
         </div>
         </div>
         </div>
-        {/* </div> */}
-        {/* </div> */}
        </section>
     // </main>
   );

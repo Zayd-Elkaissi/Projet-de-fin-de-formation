@@ -39,12 +39,12 @@ class FavoriteController extends Controller
             'name' => $request->foodName,
             'image'=> $request->foodImg,
             'timePreparation' => $request->timePreparation,
-            'Number' => $request->Number
+            // 'Number' => $request->Number
         ]);
 
         return response()->json([
             'success' => true,
-            'favorites' => $this->all()
+            'favorites' => Favorite::all()
         ]);
     }
 
@@ -79,5 +79,9 @@ class FavoriteController extends Controller
     {
         $favorite = Favorite::find($id);
         $favorite->delete();
+
+        return response()->json([
+            'favorites' => Favorite::all()
+        ]);
     }
 }

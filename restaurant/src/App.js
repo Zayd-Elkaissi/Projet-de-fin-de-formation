@@ -7,6 +7,7 @@ import { BrowserRouter, Link, Route, Router, Routes } from 'react-router-dom';
 import Home from "./component/Home";
 import Registre from "./component/Registre";
 import Login from "./component/Login";
+import Favorit from "./component/Favorit";
 
 const App= () =>{
   return (
@@ -18,6 +19,10 @@ const App= () =>{
          <Route path='/'  element={<Home/>}/>
          <Route path='/login' element={<Login/>}/>
          <Route path='/registre' element={<Registre/>}/>
+         <Route path='/favorit' element={<Favorit/>}/>
+         <Route path='/favorit' element={<Favorit/>}/>
+         <Route path='/favorit' element={<Favorit/>}/>
+         <Route path='/favorit' element={<Favorit/>}/>
          </Routes>
          {/* </Themeprovider> */}
        </BrowserRouter>

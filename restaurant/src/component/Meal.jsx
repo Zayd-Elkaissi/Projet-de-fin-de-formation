@@ -24,16 +24,13 @@ export default function Meal({ meal }) {
       foodName:meal.title,
       foodImg:imageUrl,
       timePreparation:meal.readyInMinutes,
-      Number:meal.servings
+      // Number:meal.servings
      })
      setFavorites(true);
-
+     alert("Added to favorites.")
   };
 
-  function Remov(id) {
-     axios.delete("http://127.0.0.1:8000/api/favorite" + id);
-     setFavorites(false);
-  }
+ 
 
   return (
 						<div class="col-sm-4  item">
@@ -45,21 +42,10 @@ export default function Meal({ meal }) {
 									<h4>{meal.title}</h4>
 									<p class="item-price">Preparation time : <b>{meal.readyInMinutes}</b> minutes</p>
 									<a target= "blank" href={meal.sourceUrl} class="btn btn-warning m-2">Details</a>
-                  <a target= "blank" href={meal.sourceUrl} class="btn btn-warning">Favori</a>
+                  <button target= "blank"  onClick={favorite} class="btn btn-warning">Favorite</button>
 								</div>						
 							</div>
 						</div>
-            
-    
-  //   <div className="col-lg-6 menu-item">
-  //   <img src={imageUrl} className="menu-img" alt="" />
-  //   <div className="menu-content">
-  //   <a target= "blank" href={meal.sourceUrl}>{meal.title}</a><span className=""><i id="right" className="bx bx-chevron-right"></i></span>
-  //   </div>
-  //   <div className="menu-ingredients">
-  //   Preparation time : {meal.readyInMinutes} minutes
-  //   </div>
-  // </div>
 
 
 
