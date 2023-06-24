@@ -25,8 +25,8 @@ export default function MealList({ mealData }) {
 
 
      
-			<div id="" class="carousel slide" >
-				<div class="item row">
+			<div id="" className="carousel slide" >
+				<div className="item row">
         {mealData.meals.map((meal) => {
           return <Meal key={meal.id} meal={meal} />;
         })}

@@ -1,6 +1,6 @@
 import axios from 'axios';
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Link, Route, Router, Routes } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Footer from './layout/Footer';
 
 function Favorit() {
@@ -21,10 +21,6 @@ function Favorit() {
      }
 
         getfavorite()
-    // const Starticon = (item) => {
-    //     console.log(item);
-    //     return datafavorite.some((fav)=>fav.quote === quote);
-    //   }
 
     function hundelLogout() {
         localStorage.clear()
@@ -38,7 +34,6 @@ function Favorit() {
 
             <div id="topbar" className="d-flex align-items-center fixed-top">
                 <div className="container d-flex justify-content-center justify-content-md-between">
-
                     <div className="contact-info d-flex align-items-center">
                         <i className="bi bi-phone d-flex align-items-center" data-aos="fade-right"><span>+212 642 5837 17</span></i>
                     </div>
@@ -60,15 +55,15 @@ function Favorit() {
                         </ul>
                         <i className="bi bi-list mobile-nav-toggle"></i>
                     </nav>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div className="dropdown">
+                        <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             Profile
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><Link class="dropdown-item" to="/login">Login</Link></li>
-                            <li><Link class="dropdown-item" to="/registre">Registre</Link></li>
+                        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><Link className="dropdown-item" to="/login">Login</Link></li>
+                            <li><Link className="dropdown-item" to="/registre">Registre</Link></li>
                             {/* {if(User){ */}
-                            <li><Link onClick={hundelLogout} class="dropdown-item" to="/">Logout</Link></li>
+                            <li><Link onClick={hundelLogout} className="dropdown-item" to="/">Logout</Link></li>
                             {/* };
                          } */}
 

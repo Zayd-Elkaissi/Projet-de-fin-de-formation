@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import axios from 'axios'
+// import axios from 'axios'
 
 export default function Resier() {
-  const [imageUrl, setImageUrl] = useState("");
-  const [favorites, setFavorites] = useState([]);
+  // const [imageUrl, setImageUrl] = useState("");
+  // const [favorites, setFavorites] = useState([]);
   const [veggies, setVeggies] = useState([]);
-  const [menu, setMenu] = useState([]);
+  // const [menu, setMenu] = useState([]);
 
 
   const getVeggies = async () => {
@@ -52,7 +52,7 @@ export default function Resier() {
             <li data-filter="*" className="filter-active">All</li>
         {veggies.map(({ id, dishTypes, dataFilter}) => (
           
-            <li key={id} data-filter={"." + dataFilter}>{dishTypes[0]}</li>
+            <li key={id} data-filter={'.' + dataFilter}>{dishTypes[0]}</li>
             ))}
           </ul>
         </div>

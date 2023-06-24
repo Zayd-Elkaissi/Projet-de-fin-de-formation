@@ -33,16 +33,16 @@ export default function Meal({ meal }) {
  
 
   return (
-						<div class="col-sm-4  item">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src={imageUrl} class="img-fluid" alt={imageUrl}/>
+						<div className="col-sm-4  item">
+							<div className="thumb-wrapper">
+								<div className="img-box">
+									<img src={imageUrl} className="img-fluid" alt={imageUrl}/>
 								</div>
-								<div class="thumb-content">
+								<div className="thumb-content">
 									<h4>{meal.title}</h4>
-									<p class="item-price">Preparation time : <b>{meal.readyInMinutes}</b> minutes</p>
-									<a target= "blank" href={meal.sourceUrl} class="btn btn-warning m-2">Details</a>
-                  <button target= "blank"  onClick={favorite} class="btn btn-warning">Favorite</button>
+									<p className="item-price">Preparation time : <b>{meal.readyInMinutes}</b> minutes</p>
+									<a target= "blank" href={meal.sourceUrl} className="btn btn-warning m-2">Details</a>
+                  <button target= "blank"  onClick={favorite} className="btn btn-warning">Favorite</button>
 								</div>						
 							</div>
 						</div>

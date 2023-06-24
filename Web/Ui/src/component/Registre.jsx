@@ -38,49 +38,45 @@ function Registre() {
 
         <body className='pt-3'>
    
-        <div id="main-wrapper" class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-10">
-                    <div class="card border-0">
-                        <div class="card-body p-0">
-                            <div class="row no-gutters">
-                                <div class="col-lg-6">
-                                    <div class="p-5">
-                                        <div class="mb-5">
-                                            <h3 class="h4 font-weight-bold text-warning">Register</h3>
+        <div id="main-wrapper" className="container">
+            <div className="row justify-content-center">
+                <div className="col-xl-10">
+                    <div className="card border-0">
+                        <div className="card-body p-0">
+                            <div className="row no-gutters">
+                                <div className="col-lg-6">
+                                    <div className="p-5">
+                                        <div className="mb-5">
+                                            <h3 className="h4 font-weight-bold text-warning">Register</h3>
                                         </div>
-        
-                                        {/* <h6 class="h5 mb-0">Welcome back!</h6> */}
-                                        {/* <p class="text-muted mt-2 mb-5">Enter your email address and password to access admin panel.</p> */}
-        
                                         <form>
-                                            <div class="form-group">
+                                            <div className="form-group">
                                                 <label for="exampleInputEmail1">Name</label>
-                                                <input type="text" class="form-control" value={name} onChange={(e) => setName(e.target.value)} />
+                                                <input type="text" className="form-control" value={name} onChange={(e) => setName(e.target.value)} />
                                             </div>
-                                            <div class="form-group">
+                                            <div className="form-group">
                                                 <label for="exampleInputPassword1">Email</label>
-                                                <input type="email" class="form-control" value={email} onChange={(e) => setEmail(e.target.value)} />
+                                                <input type="email" className="form-control" value={email} onChange={(e) => setEmail(e.target.value)} />
                                             </div>
-                                            <div class="form-group">
+                                            <div className="form-group">
                                                 <label for="exampleInputPassword1">Password</label>
-                                                <input type="password" class="form-control" value={password} onChange={(e) => setPassword(e.target.value)} />
+                                                <input type="password" className="form-control" value={password} onChange={(e) => setPassword(e.target.value)} />
                                             </div>
-                                            <div class="form-group">
+                                            <div className="form-group">
                                                 <label for="exampleInputPassword1">Confirm Password</label>
-                                                <input type="password" class="form-control" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
+                                                <input type="password" className="form-control" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
                                             </div>
-                                            <button type="button" onClick={handelRegistre} class="btn btn-warning">Register</button>
+                                            <button type="button" onClick={handelRegistre} className="btn btn-warning">Register</button>
                                         </form>
                                     </div>
                                 </div>
         
-                                <div class="col-lg-6 d-none d-lg-inline-block">
-                                    <div class="account-block rounded-right">
-                                        <div class="overlay rounded-right"></div>
-                                        <div class="account-testimonial">
-                                            {/* <h4 class="text-white mb-4">This  beautiful theme yours!</h4> */}
-                                            {/* <p class="lead text-white">"Best investment i made for a long time. Can only recommend it for other users."</p> */}
+                                <div className="col-lg-6 d-none d-lg-inline-block">
+                                    <div className="account-block rounded-right">
+                                        <div className="overlay rounded-right"></div>
+                                        <div className="account-testimonial">
+                                            {/* <h4 className="text-white mb-4">This  beautiful theme yours!</h4> */}
+                                            {/* <p className="lead text-white">"Best investment i made for a long time. Can only recommend it for other users."</p> */}
                                             {/* <p>- Admin User</p> */}
                                         </div>
                                     </div>
@@ -98,25 +94,25 @@ function Registre() {
         </div>
     </body>
 
-//         <div class="login-form">
+//         <div className="login-form">
 //      <h1>BBBoot</h1>
-//      <div class="form-group ">
-//      <input type="text" class="form-control" placeholder='Name' value={name} onChange={(e) => setName(e.target.value)} />
-//        <i class="mdi mdi-account"></i>
+//      <div className="form-group ">
+//      <input type="text" className="form-control" placeholder='Name' value={name} onChange={(e) => setName(e.target.value)} />
+//        <i className="mdi mdi-account"></i>
 //      </div>
-//      <div class="form-group log-status">
-//      <input type="email" class="form-control" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
-//        <i class="mdi mdi-lock"></i>
+//      <div className="form-group log-status">
+//      <input type="email" className="form-control" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
+//        <i className="mdi mdi-lock"></i>
 //      </div>
-//      <div class="form-group log-status">
-//      <input type="password" class="form-control" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
-//        <i class="mdi mdi-lock"></i>
+//      <div className="form-group log-status">
+//      <input type="password" className="form-control" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
+//        <i className="mdi mdi-lock"></i>
 //      </div>
-//      <div class="form-group log-status">
-//      <input type="password" class="form-control" placeholder='Confirm Password' value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
-//        <i class="mdi mdi-lock"></i>
+//      <div className="form-group log-status">
+//      <input type="password" className="form-control" placeholder='Confirm Password' value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
+//        <i className="mdi mdi-lock"></i>
 //      </div>
-//      <button type="button" class="log-btn" onClick={handelRegistre}><i class="mdi mdi-account"></i> Register</button>
+//      <button type="button" className="log-btn" onClick={handelRegistre}><i className="mdi mdi-account"></i> Register</button>
      
     
 //    </div>

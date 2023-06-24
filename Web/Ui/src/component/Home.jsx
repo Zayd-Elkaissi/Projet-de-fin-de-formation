@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import MealList from "./MealList";
 import Resier from "./Resier";
-import Menu from "./Menu";
 import Footer from "./layout/Footer";
-import { BrowserRouter, Link, Route, Router, Routes } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 
 function Home() {
     const [mealData, setMealData] = useState(null);
@@ -53,17 +52,6 @@ function Home() {
                     <h1 className="logo me-auto me-lg-0"><a href="index.html">Restaurantly</a></h1>
 
                     <nav id="navbar" className="navbar order-last order-lg-0">
-                        {/* <ul>
-                            <li>
-                                <Link to="/login">Login</Link>
-                            </li>
-                            <li>
-                                <Link to="/registre">Registre</Link>
-                            </li>
-                            <li>
-                                <Link onClick={hundelLogout} to="/">Logout</Link>
-                            </li>
-                        </ul> */}
                         <ul>
                             <li><a className="nav-link scrollto active" href="#hero">Home</a></li>
                             <li><a className="nav-link scrollto" href="#menu">Menu</a></li>
@@ -72,18 +60,14 @@ function Home() {
                         </ul>
                         <i className="bi bi-list mobile-nav-toggle"></i>
                     </nav>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div className="dropdown">
+                        <button className="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             Profile
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><Link class="dropdown-item" to="/login">Login</Link></li>
-                            <li><Link class="dropdown-item" to="/registre">Registre</Link></li>
-                            {/* {if(User){ */}
-                                <li><Link onClick={hundelLogout} class="dropdown-item" to="/">Logout</Link></li>
-                             {/* };
-                             } */}
-                           
+                        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><Link className="dropdown-item" to="/login">Login</Link></li>
+                            <li><Link className="dropdown-item" to="/registre">Registre</Link></li>
+                            <li><Link onClick={hundelLogout} className="dropdown-item" to="/">Logout</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -121,9 +105,6 @@ function Home() {
 
                 {/*  ======= Resier Section =======  */}
                 <Resier />
-
-                {/* ======= Specials Section =======  */}
-                {/* <Menu />  */}
 
             </main>
             {/* -- End #main --  */}
